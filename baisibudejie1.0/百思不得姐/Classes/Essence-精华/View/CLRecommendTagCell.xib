@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recommendTag" rowHeight="82" id="KGk-i7-Jjw" customClass="CLRecommendTagCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mNp-yS-2UC" userLabel="头像">
+                        <rect key="frame" x="28" y="16" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="1Bw-VJ-sTe"/>
+                            <constraint firstAttribute="height" constant="50" id="OZp-Lb-EHx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-JC-7wN" userLabel="名字">
+                        <rect key="frame" x="88" y="16" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV2-1i-tPs" userLabel="订阅数">
+                        <rect key="frame" x="88" y="48" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp6-8u-Oj0">
+                        <rect key="frame" x="249" y="28" width="51" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="+ 订阅" backgroundImage="FollowBtnBg">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SaI-JC-7wN" firstAttribute="top" secondItem="mNp-yS-2UC" secondAttribute="top" id="Day-fF-MGd"/>
+                    <constraint firstItem="SaI-JC-7wN" firstAttribute="leading" secondItem="mNp-yS-2UC" secondAttribute="trailing" constant="10" id="NYz-ke-qjN"/>
+                    <constraint firstItem="EV2-1i-tPs" firstAttribute="leading" secondItem="mNp-yS-2UC" secondAttribute="trailing" constant="10" id="bBK-9g-GIj"/>
+                    <constraint firstItem="mNp-yS-2UC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j53-a3-GXh"/>
+                    <constraint firstItem="bp6-8u-Oj0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kXz-yA-Ot1"/>
+                    <constraint firstAttribute="trailing" secondItem="bp6-8u-Oj0" secondAttribute="trailing" constant="20" id="n25-XD-F0p"/>
+                    <constraint firstItem="EV2-1i-tPs" firstAttribute="bottom" secondItem="mNp-yS-2UC" secondAttribute="bottom" id="nml-HI-Z5F"/>
+                    <constraint firstItem="mNp-yS-2UC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="s6F-9t-SsZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageListView" destination="mNp-yS-2UC" id="ckN-gw-rEL"/>
+                <outlet property="subNumberLabel" destination="EV2-1i-tPs" id="F8V-fG-m5i"/>
+                <outlet property="themeNameLabel" destination="SaI-JC-7wN" id="WH2-Uh-Jbf"/>
+            </connections>
+            <point key="canvasLocation" x="466" y="237"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+    </resources>
+</document>

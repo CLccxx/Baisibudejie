@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B34B5CD791A225CB94A0235918C0896993154E5E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0ACCEFF45D0A91612D9930316BC41DD5FC0F7D96" : 0,
+    "B34B5CD791A225CB94A0235918C0896993154E5E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8A56309A-3B99-4D29-8D81-5141AD07607E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0ACCEFF45D0A91612D9930316BC41DD5FC0F7D96" : "",
+    "B34B5CD791A225CB94A0235918C0896993154E5E" : "baisibudejie1.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "百思不得姐",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "百思不得姐.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CLccxx\/test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0ACCEFF45D0A91612D9930316BC41DD5FC0F7D96"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CLccxx\/Baisibudejie.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B34B5CD791A225CB94A0235918C0896993154E5E"
+    }
+  ]
+}

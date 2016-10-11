@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CLTopicPictureView">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="192"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-ss-8Tz" userLabel="占位图片">
+                    <rect key="frame" x="0.0" y="20" width="220" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4yL-C2-tQn"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bg6-fd-ueS" userLabel="图片">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="192"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="oo3-mi-cQN" userLabel="gif标识">
+                    <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceV-ar-MLz" userLabel="查看大图button">
+                    <rect key="frame" x="0.0" y="149" width="220" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="DUt-va-R5V"/>
+                    </constraints>
+                    <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
+                    <connections>
+                        <action selector="seeBigButtonClick" destination="iN0-l3-epB" eventType="touchUpInside" id="jL6-Qe-gAt"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVA-nQ-6bb" userLabel="进度条" customClass="DALabeledCircularProgressView">
+                    <rect key="frame" x="60" y="46" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6bS-dn-gxZ"/>
+                        <constraint firstAttribute="height" constant="100" id="NTQ-Ok-M2W"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ceV-ar-MLz" secondAttribute="bottom" id="9zF-Ko-DJC"/>
+                <constraint firstItem="sVA-nQ-6bb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DZj-xJ-MJT"/>
+                <constraint firstAttribute="trailing" secondItem="bg6-fd-ueS" secondAttribute="trailing" id="IlB-as-Ymt"/>
+                <constraint firstItem="sVA-nQ-6bb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mcw-FU-l7X"/>
+                <constraint firstAttribute="bottom" secondItem="bg6-fd-ueS" secondAttribute="bottom" id="RjQ-vR-fvl"/>
+                <constraint firstItem="rAn-ss-8Tz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TIi-62-R5p"/>
+                <constraint firstItem="bg6-fd-ueS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W6c-iL-bpv"/>
+                <constraint firstItem="ceV-ar-MLz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WvQ-27-7p8"/>
+                <constraint firstAttribute="trailing" secondItem="rAn-ss-8Tz" secondAttribute="trailing" id="bUU-Pq-JYJ"/>
+                <constraint firstItem="rAn-ss-8Tz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="h26-m2-oYh"/>
+                <constraint firstAttribute="trailing" secondItem="ceV-ar-MLz" secondAttribute="trailing" id="h39-Np-uH4"/>
+                <constraint firstItem="bg6-fd-ueS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zyX-NQ-qUA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gifImageView" destination="oo3-mi-cQN" id="hap-6P-hK2"/>
+                <outlet property="imageView" destination="bg6-fd-ueS" id="igR-mO-T8k"/>
+                <outlet property="progressView" destination="sVA-nQ-6bb" id="Xyo-D8-AGK"/>
+                <outlet property="seeBigButton" destination="ceV-ar-MLz" id="N8o-os-8gJ"/>
+            </connections>
+            <point key="canvasLocation" x="385" y="257"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common-gif" width="31" height="31"/>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="see-big-picture" width="19" height="19"/>
+        <image name="see-big-picture-background" width="285" height="43"/>
+    </resources>
+</document>
